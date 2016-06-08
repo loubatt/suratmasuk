@@ -16,3 +16,5 @@ Double <enter> for being enter
 
 
 4 times <enter>
+
+Banjarmasin, 3 Ramadhan 1437 H

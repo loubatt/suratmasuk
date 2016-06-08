@@ -1,0 +1,34 @@
+{{define "title"}}
+	Home
+{{end}}
+
+{{define "username"}}
+	{{.admin_name}}
+{{end}}
+
+{{define "body"}}
+	<table>
+	<form method="POST" action="/admin/user/edit/{{ .datauser.id_user}}">
+		<tr>
+			<td>Username :</td><td><input type="text" name="username" placeholder="Username" value="{{ .datauser.username}}" /></td>
+		</tr>
+		<tr>
+			<td>Password :</td><td><input type="text" name="password" placeholder="Password" value="{{ .datauser.password}}" /></td>
+		</tr>
+		<tr>
+			<td>Nama :</td><td><input type="text" name="nama" placeholder="Nama" value="{{ .datauser.nama}}" /></td>
+		</tr>
+		<tr>
+			<td>Kode Jabatan :</td><td><input type="text" name="kode_jabatan" placeholder="Kode Jabatan" value="{{ .datauser.kode_jabatan}}" /></td>
+		</tr>
+		<tr>
+			<td>Jenis SKL :</td><td><input type="text" name="jenis_skl" placeholder="Jenis Surat Keluar" value="{{ .datauser.jenis_skl}}" /></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Edit" /></td>
+
+		</tr>
+	</form>
+	</table>
+
+{{end}}

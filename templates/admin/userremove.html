@@ -1,0 +1,16 @@
+{{define "title"}}
+	Home
+{{end}}
+
+{{define "username"}}
+	{{.admin_name}}
+{{end}}
+
+{{define "body"}}
+
+Yakin ingin menghapus {{ .datauser.nama }} ?
+	<form method="POST" action="/admin/user/remove/{{ .datauser.id_user}}">
+		<input type="submit" value="Remove" />
+	</form>
+
+{{end}}

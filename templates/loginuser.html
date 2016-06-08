@@ -1,0 +1,14 @@
+{{define "title"}}Login{{end}}
+
+{{define "body"}}
+
+
+<div style="width:20%;margin: 0 auto;margin-top: 150px; padding:10px">
+	<form method="POST" action="/login">
+		<input type="text" name="username" class="form-control" placeholder="Username" /><br/>
+		<input type="password" name="password" class="form-control" placeholder="Password" /><br/>
+		<input type="submit" value="Masuk" />
+	</form>
+</div>
+
+{{end}}

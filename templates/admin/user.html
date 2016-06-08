@@ -1,0 +1,53 @@
+{{define "title"}}
+	USER
+{{end}}
+
+{{define "username"}}
+	{{.admin_name}}
+{{end}}
+
+{{define "body"}}
+
+	<style>
+		table{
+			font-size: 12px;
+		}
+		th{
+			font-weight: normal;
+			background: #fff2ae;
+		}
+		th, td{
+			border-bottom: 1px solid silver;
+			border-right: 1px solid silver;
+		}
+		th, td{
+			padding: 5px;
+		}
+	</style>
+	
+	<br/>
+
+	<a href="./user/add">Add User</a> <br/>
+
+	<table>
+		<thead>
+			<th>Nama</th>
+			<th>Kode Jabatan</th>
+			<th>Jenis Surat Keluar</th>
+			<th colspan="2">Mode</th>
+		</thead>
+
+		{{ range .userlist}}
+			<tr>
+				<td>{{ .Nama}}</td>
+				<td>{{ .Kode_jabatan}}</td>
+				<td>{{ .Jenis_skl}}</td>
+				<td><a href="./user/edit/{{ .Id_user }}">Edit</a></td>
+				<td><a href="./user/remove/{{ .Id_user }}">Remove</a></td>
+			</tr>
+		{{ end }}
+
+
+	</table>
+
+{{end}}

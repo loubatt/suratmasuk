@@ -1,0 +1,35 @@
+{{define "title"}}
+	JABATAN
+{{end}}
+
+{{define "username"}}
+	{{.admin_name}}
+{{end}}
+
+{{define "body"}}
+
+	<!-- <a href="./user/add">Add User</a> <br/> -->
+
+	<style>
+		table{
+			font-size: 12px;
+		}
+		th{
+			font-weight: normal;
+			background: #fff2ae;
+		}
+		th, td{
+			border-bottom: 1px solid silver;
+			border-right: 1px solid silver;
+		}
+		th, td{
+			padding: 5px;
+		}
+	</style>
+
+	<br/>
+	<a href="./form_search/tahun/add">Add Tahun</a> <br/>
+	<table>
+	</table>
+
+{{end}}

@@ -1,0 +1,12 @@
+{
+	"Port" 				: "9090",
+	"MongoConfig"       : "mongodb://localhost:27017",
+	"MongoDbName"		: "development02",
+	"TemplatePath"  	: "D:/PROJECTS/Reactjs/development0.2.01/templates/",
+	"PublicPath"		: "D:/PROJECTS/Reactjs/development0.2.01/public/",
+	"PDFPath"		    : "D:/PROJECTS/Reactjs/development0.2.01/public/pdf",
+	"ImagesLogoPath"    : "D:/PROJECTS/Reactjs/development0.2.01/public/images/depkeu.png",
+	"TahunAgendaSMS"	: "2015",
+	"UploadPath"		: "D:/PROJECTS/Reactjs/development0.2.01/public/files/",
+	"UploadSKLPath"		: "D:/PROJECTS/Reactjs/development0.2.01/public/files/"
+}

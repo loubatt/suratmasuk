@@ -1,0 +1,21 @@
+{{define "title"}}
+	ADD JABATAN
+{{end}}
+
+{{define "username"}}
+	{{.admin_name}}
+{{end}}
+
+{{define "body"}}
+
+	<form method="POST" action="/admin/jabatan/add">
+		Kode Jabatan 	: <input type="text" name="kode_jabatan" placeholder="Kode Jabatan" value="{{ .datajabatan.kode_jabatan}}" /><br/>
+		Nama Jabatan 	: <input type="text" name="nama_jabatan" placeholder="Nama Jabatan" value="{{ .datajabatan.nama_jabatan}}" /><br/>
+		Nama Jabatan Pendek 	: <input type="text" name="nama_jabatan_pendek" placeholder="Nama Jabatan Pendek" value="{{ .datajabatan.nama_jabatan_pendek}}" /><br/>
+		Badge 	: <input type="text" name="badge" placeholder="badge" value="{{ .datajabatan.badge}}" /><br/>
+		Badge Color 	: <input type="text" name="badge_color" placeholder="badge_color" value="{{ .datajabatan.badge_color}}" /><br/>
+		Atasan 			: <input type="text" name="atasan" placeholder="Kode Atasan" value="{{ .datajabatan.atasan}}" /><br/>
+		<input type="submit" value="Add" />
+	</form>
+
+{{end}}

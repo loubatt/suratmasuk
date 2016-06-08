@@ -1,0 +1,10 @@
+Development0.2 :
+- .JSX :
+  * Tidak lagi menggunakan ListFactory, manipulasi disisi server alhamdulillah sudah bisa dilakukan
+  * Semoga bisa meringankan beban client-side
+
+- suratmasuk_model :
+  * Lets manipulate model in server way !
+  * Bismillah ...
+
+- Edit for lesson git

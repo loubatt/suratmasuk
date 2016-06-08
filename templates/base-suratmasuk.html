@@ -1,0 +1,225 @@
+{{define "base"}}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Surat Masuk</title>
+        <link href="/materialize/materialize-font.css" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="/materialize/materialize.min.css"  media="screen,projection"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script type="text/javascript" src="/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="/jquery/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="/bootstrap/js/bootstrap-datepicker.js"></script>
+        <script type="text/javascript" src="/jquery/jquery.form.min.js"></script>
+        <script type="text/javascript" src="/react/react.js"></script>
+        <style type="text/css">
+            html{
+                font-family: tahoma;
+            }
+            .base-container{
+                width:1200px;
+            }
+            nav{
+                height: 45px;
+                line-height: 45px;
+                box-shadow: none;
+            }
+
+            div.menu-button{
+                float: left;
+                margin-right: 10px;
+            }
+            div.menu{
+                order: 2;
+                float: left;
+                padding-top: 20px;
+                width:600px;
+            }
+            div.docs-table-navigation {
+                order: 3;
+                float: right;
+                padding-top: 8px;
+            }
+            .hide{
+                display: none !important;
+            }
+            th, td{
+                padding: 0;
+                /*vertical-align: top;*/
+                text-transform: uppercase;
+                padding-bottom: 3px;
+                padding-top: 3px;
+                vertical-align: top;
+            }
+            th{
+              vertical-align: middle;;
+            }
+            th{
+                text-align: center;
+                font-weight: normal;
+            }
+            td {
+              padding-left: 7px;
+            }
+            tr.selected{
+                background-color: #fff2ae !important;
+            }
+            div.picker__date-display{
+                display: none;
+            }
+            div.picker__day--highlighted{
+                background-color: yellow;
+            }
+            div.picker__day--today{
+                font-weight: bold;
+            }
+            div.suggest{
+                color: #039be5;
+                margin-top: -10px;
+                z-index: 99;
+                position: fixed;
+                background: #e3f2fd;
+                padding: 5px;
+            }
+            div.item_arsip_selected{
+                /*color: #039be5;*/
+                text-decoration: underline;
+            }
+            div.arsip-result-search-item{
+                /*border-bottom: 1px solid silver;*/
+            }
+
+            table.scroll {
+                /* width: 100%; */ /* Optional */
+                /* border-collapse: collapse; */
+                border-spacing: 0;
+                /*border: 2px solid black;*/
+            }
+
+            table.scroll tbody,
+            table.scroll thead {
+              display: block;
+              border:0;
+            }
+
+            thead tr th {
+                /*height: 30px;*/
+                /*line-height: 30px;*/
+                /* text-align: left; */
+            }
+
+            table.scroll tbody {
+                height: 480px;
+                overflow-y: auto;;
+                overflow-x: auto;;
+            }
+
+            .td-flexible-edge {
+              /*background: yellow;*/
+              /*text-align: center;*/
+              width: 70px;
+            }
+
+            table.scroll tbody:hover{
+                overflow-y: auto;
+            }
+
+            table.scroll tbody:hover .td-flexible-edge{
+                /*background: red;*/
+                /*width: 67px;*/
+            }
+
+            tbody {
+              /*border-top: 2px solid black;*/
+            }
+
+            tbody td, thead th {
+                /* width: 20%; */ /* Optional */
+                /*border-right: 1px solid silver;*/
+                /* white-space: nowrap; */
+            }
+
+            tbody td:last-child, thead th:last-child {
+                border-right: none;
+            }
+
+            div.page_number_changer{
+                position: fixed;
+                margin-left: 135px;
+                margin-top: -50px;
+            }
+
+            /* Let's get this party started */
+            ::-webkit-scrollbar {
+                width: 2px;
+            }
+
+            /* Track */
+            ::-webkit-scrollbar-track {
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+                /*-webkit-border-radius: 10px;*/
+                /*border-radius: 10px;*/
+                background: rgba(44,120,242,.2);
+            }
+
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                /*-webkit-border-radius: 10px;*/
+                /*border-radius: 10px;*/
+                background: rgba(44,120,242,.7);
+                /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);*/
+            }
+            ::-webkit-scrollbar-thumb:window-inactive {
+            	background: rgba(255,0,0,0.4);
+            }
+
+            .custom-checkbox[type="checkbox"].filled-in + label:after{
+                 border: 2px solid silver;
+                 /*background-color: #ff9800;*/
+            }
+
+            .custom-checkbox[type="checkbox"].filled-in:checked + label:after{
+                 border: 2px solid silver;
+                 background-color: silver;
+            }
+
+            .custom-chip{
+              border-radius: 2px;
+              margin-right: 1px;
+              margin-bottom: 1px;
+            }
+
+            .doc_count{
+              color: green;
+              cursor: pointer;
+            }
+
+            .prev_button, .next_button{
+              /*color: red;*/
+              cursor: pointer;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="row">
+            <div class="container base-container">
+                <main>
+                <div id="react"></div>
+                </main>
+            </div>
+        </div>
+    </body>
+
+    <script type="text/javascript" src="/materialize/materialize.min.js"></script>
+    <script type="text/javascript" src="/react/suratmasuk.js"></script>
+    <script type="text/javascript">
+        $( document ).ready(function() {
+
+        });
+    </script>
+</html>
+
+{{end}}

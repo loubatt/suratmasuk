@@ -1,0 +1,19 @@
+{{define "title"}}
+	Home
+{{end}}
+
+{{define "username"}}
+	{{.admin_name}}
+{{end}}
+
+{{define "body"}}
+
+	<form method="POST" action="/admin/user/add">
+		Username : <input type="text" name="username" placeholder="Username" /><br/>
+		Password : <input type="text" name="password" placeholder="Password" /><br/>
+		Nama : <input type="text" name="nama" placeholder="Nama" /><br/>
+		Kode Jabatan : <input type="text" name="kode_jabatan" placeholder="Kode Jabatan" /><br/>
+		<input type="submit" value="Add" />
+	</form>
+
+{{end}}

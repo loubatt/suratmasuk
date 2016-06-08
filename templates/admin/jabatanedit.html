@@ -1,0 +1,39 @@
+{{define "title"}}
+	EDIT JABATAN
+{{end}}
+
+{{define "username"}}
+	{{.admin_name}}
+{{end}}
+
+{{define "body"}}
+	<table>
+	<form method="POST" action="/admin/jabatan/edit/{{ .datajabatan.id_jabatan}}">
+		<tr>
+			<td>Kode Jabatan :</td><td><input type="text" name="kode_jabatan" placeholder="Kode Jabatan" value="{{ .datajabatan.kode_jabatan}}" /></td>
+		</tr>
+		<tr>
+			<td>Nama Jabatan :</td><td><input type="text" name="nama_jabatan" placeholder="Nama Jabatan" value="{{ .datajabatan.nama_jabatan}}" /></td>
+		</tr>
+		<tr>
+			<td>Nama Jabatan Pendek :</td><td><input type="text" name="nama_jabatan_pendek" placeholder="Nama Jabatan Pendek" value="{{ .datajabatan.nama_jabatan_pendek}}" /></td>
+		</tr>
+		<tr>
+			<td>Badge :</td><td><input type="text" name="badge" placeholder="badge" value="{{ .datajabatan.badge}}" /></td>
+		</tr>
+		<tr>
+			<td>Kode SKL :</td><td><input type="text" name="kode_skl" placeholder="Kode SKL" value="{{ .datajabatan.kode_skl}}" /></td>
+		</tr>
+		<tr>
+			<td>Badge Color :</td><td><input type="text" name="badge_color" placeholder="badge_color" value="{{ .datajabatan.badge_color}}" /></td>
+		</tr>
+		<tr>
+			<td>Atasan :</td><td><input type="text" name="atasan" placeholder="Kode Atasan" value="{{ .datajabatan.atasan}}" /></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Edit" /></td>
+		</tr>
+	</form>
+	</table>
+
+{{end}}

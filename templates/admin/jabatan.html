@@ -1,0 +1,61 @@
+{{define "title"}}
+	JABATAN
+{{end}}
+
+{{define "username"}}
+	{{.admin_name}}
+{{end}}
+
+{{define "body"}}
+
+	<!-- <a href="./user/add">Add User</a> <br/> -->
+
+	<style>
+		table{
+			font-size: 12px;
+		}
+		th{
+			font-weight: normal;
+			background: #fff2ae;
+		}
+		th, td{
+			border-bottom: 1px solid silver;
+			border-right: 1px solid silver;
+		}
+		th, td{
+			padding: 5px;
+		}
+	</style>
+
+	<br/>
+	<a href="./jabatan/add">Add Jabatan</a> <br/>
+	<table>
+		<thead>
+			<th>Kode Jabatan</th>
+			<th>Nama Jabatan</th>
+			<th>Nama Jabatan Pendek</th>
+			<th>Badge</th>
+			<th>Kode SKL</th>
+			<th>Badge Color</th>
+			<th>Atasan</th>
+			<th colspan="2">Mode</th>
+		</thead>
+
+		{{ range .jabatanlist}}
+			<tr>
+				<td>{{ .Kode_jabatan }}</td>
+				<td>{{ .Nama_jabatan }}</td>
+				<td>{{ .Nama_jabatan_pendek }}</td>
+				<td>{{ .Badge }}</td>
+				<td>{{ .Kode_skl }}</td>
+				<td>{{ .Badge_color }}</td>
+				<td>{{ .Atasan }}</td>
+				<td><a href="./jabatan/edit/{{ .Id_jabatan }}">Edit</a></td>
+				<td><a href="./jabatan/remove/{{ .Id_jabatan }}">Remove</a></td>
+			</tr>
+		{{ end }}
+
+
+	</table>
+
+{{end}}

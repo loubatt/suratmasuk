@@ -1,0 +1,358 @@
+body{
+    font-family: tahoma !important;
+}
+button.full-row{
+    height: 35px;
+}
+div#header{
+    background: green;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+div#window_form_search, 
+div#window_form_input, 
+div#window_form_edit, 
+div#window_form_detail, 
+div#window_form_pic, 
+div#window_form_arsip, 
+div#window_form_files{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    /*background-color: #C5CAE9;*/
+    position: fixed;
+    z-index: 100;
+}
+div#window_form_pic, div#window_form_arsip{
+    width:545px;
+}
+div#window_form_detail{
+    width:950px;
+}
+div#window_form_search{
+    top: 100px;
+    left: 400px;
+}
+div#window_form_input{
+    top: 100px;
+    left: 400px;
+}
+div#window_form_edit{
+    top: 10px;
+    left: 360px;
+}
+div#window_form_detail{
+    top: 10px;
+    left: 360px;
+}
+div#window_form_pic, div#window_form_arsip{
+    top: 10px;
+    left: 620px;
+}
+div#window_form_files{
+    top: 10px;
+    left: 880px;
+}
+div#window_form_search_handling, 
+div#window_form_input_handling, 
+div#window_form_edit_handling, 
+div#window_form_pic_handling, 
+div#window_form_arsip_handling, 
+div#window_form_detail_handling,
+div#window_form_files_handling{
+    width: 330px;
+    height: 26px;
+    background-color: rgba(0,120,215,1);
+}
+div#window_form_pic_handling, div#window_form_arsip_handling {
+    width: 518px !important;
+}
+div#window_form_detail_handling{
+    width: 875px;
+}
+div.arsip-list{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.arsip-mode{
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.arsip-result-search{
+    background: #FFFFFF;
+    clear: both;
+    position: fixed;
+    margin-top: 35px;
+    margin-left: -520px;
+}
+div.arsip-list-container{
+    width:500px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.arsip-item{
+    width: 155px;
+}
+div.arsip-result-search-item{
+    border-bottom: 1px solid silver;
+    padding: 5px;
+    font-size: 80%;
+    background: #FFF2AE;
+    /*color: yellow;*/
+}
+div.grid-row{
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.grid-row-column1{
+    width: 10%;
+}
+div.grid-row-column2{
+    width: 20%;
+}
+div.grid-row-column3{
+    width: 30%;
+}
+div.grid-row-column4{
+    width: 40%;
+}
+div.grid-row-column5{
+    width: 50%;
+}
+div.grid-row-column6{
+    width: 60%;
+}
+div.grid-row-column7{
+    width: 70%;
+}
+div.grid-row-column8{
+    width: 80%;
+}
+div.grid-row-column9{
+    width: 90%;
+}
+div.grid-row-column10{
+    width: 100%;
+}
+div.container{
+    padding-left: 0px !important;
+    width: 1200px;
+} 
+div.disposisi-item{
+    width: 170px;
+}
+div.disposisi-mode{
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.docs-table{
+    width: 100%;
+    order: 1;
+}
+div.docs-table-navigation{
+    order: 3;
+    float: right;
+}
+div.form-search-container, 
+div.form-input-container, 
+div.form-pic-container, 
+div.form-arsip-container, 
+div.form-detail-container,
+div.form-edit-container{
+    background: rgb(225,232,234);
+    padding: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    border: 0px solid rgb(231,235,237);
+}
+div.form-detail-container{
+    display: flex;
+    width: 895px;
+    /*background-color: orange;*/
+}
+div.form-detail-surat{
+    margin-right: 25px;
+}
+div.form-detail-disposisi{
+    font-size: 85%;
+}
+div.form-detail-disposisi-item{
+    padding: 3px;
+}
+div.form-detail-disposisi-item-head{
+    cursor: pointer;
+    padding: 3px;
+}
+div.form-detail-disposisi-item-content{
+    padding: 3px;
+    margin-left: 20px;
+    border: 1px solid silver;
+    background-color: #FFFFFF;
+}
+div.header-brand{
+    padding-top: 17px;
+    width: 600px;
+    background: #FFFFFF;
+    font-weight: normal;
+    font-size: 95%;
+}
+div.header-menu{
+    display: flex;
+    justify-content: flex-end;
+    width: 585px;
+    background: #FFFFFF;
+}
+div.header-menu-item{
+    border-top: 0px solid #BBDEFB;
+    margin-right: 2px;
+    text-align: center;
+    width: 90px;
+    padding-top: 17px;
+    background: #FFFFFF;
+    font-size: 95%;
+}
+div.item_arsip_selected{
+    /*border: 3px solid red;*/
+    color: green;
+    font-weight: bold;
+}
+div.menu{
+    width: 850px;
+    order: 2;
+}
+div.menu-button1{
+    float: right;
+    margin-right: 2px;
+}
+div.menu-button{
+    float: left;
+    margin-right: 2px;
+}
+div.net-pic-list{
+    width: 170px;
+}
+div.net-pic-list-item{
+    color: red;
+}
+div.page_number_changer{
+    position: fixed;
+    margin-left: 135px;
+    margin-top: -50px;
+}
+div.pic-list{
+    width: 170px;
+}
+div.pic-list-item{
+    color:purple;
+}
+div.pic-notes{
+    width: 500px;
+    background: yellow;
+}
+div.suggest{
+    position: fixed;
+    background: red;
+}
+label{
+    font-weight: normal;
+    font-size: 13px;
+}
+select.form-field-tanggal{
+    width: 80px;
+}
+select.form-field-bulan{
+    width: 120px;
+}
+select.form-field-tahun{
+    width: 100px;
+}
+span.doc_count{
+    color: green;
+    cursor: pointer;
+}
+span.header-brand-name{
+    font-weight: bold;
+}
+span.form-field-label{
+    /*color: gray;
+    font-size: 12px;*/
+}
+span.form-detail-disposisi-item-content-label{
+    float: left;
+    width: 130px;
+}
+td.active{
+    background-color: yellow;
+}
+td.day{
+    cursor: pointer;
+    text-align: center;
+}
+td.day:hover{
+    background-color: #fff2ae;
+}
+td.focused{
+    background-color: silver;
+}
+td.today{
+    background-color: blue;
+    color: white;
+}   
+textarea.form-control{
+    height: 140px;
+    width: 322px;
+}
+textarea.pic-notes{
+    width: 100%;
+    height: 100px;
+}
+th.docs-table{
+    background-color: #1976D2;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-align: center;
+}         
+.full-row{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+.btn-close{
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-left: 1px;
+    cursor: pointer;
+    background-color: rgba(0,120,215,1);
+    color: silver;
+}
+.btn-close:hover{
+    color: red;
+}
+.hide{
+    display: none !important;
+}
+.selected{
+    background-color: #F0F4C3 !important;
+    /*color: #FFFFFF;*/
+}
+.card {
+    padding: 1.5rem;
+    box-shadow: 0 1px 2px #aaa;
+    background: white;
+    margin: 0.5rem;
+    border-radius: 3px;
+    overflow: auto;
+    font-size: 75%;
+}
+.small-font{
+    font-size: 10px;
+}

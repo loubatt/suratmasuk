@@ -6,3 +6,5 @@ Development0.2 :
 - suratmasuk_model :
   * Lets manipulate model in server way !
   * Bismillah ...
+
+- Edit for lesson git
